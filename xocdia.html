@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <style>
@@ -12,7 +14,6 @@
         overflow: hidden;
     }
 
-    /* Style the links inside the navigation bar */
     .topnav a {
         float: left;
         display: block;
@@ -23,22 +24,19 @@
         font-size: 17px;
     }
 
-    /* Change the color of links on hover */
+    .fa {
+        color: #ffc100;
+    }
+
     .topnav a:hover {
         background-color: #ddd;
         color: black;
     }
 
-    /* Hide the link that should open and close the topnav on small screens */
     .topnav .icon {
         display: none;
     }
 
-    /* 
-* When the screen is less than 600 pixels wide, 
-* hide all links, except for the first one ("Home"). 
-* Show the link that contains should open and close the topnav (.icon) 
-*/
     @media screen and (max-width: 600px) {
         .topnav a:not(:first-child) {
             display: none;
@@ -48,14 +46,7 @@
             float: right;
             display: block;
         }
-    }
 
-    /* 
-* The "responsive" class is added to the topnav with JavaScript 
-* when the user clicks on the icon. This class makes the topnav 
-* look good on small screens (display the links vertically instead of horizontally) 
-*/
-    @media screen and (max-width: 600px) {
         .topnav.responsive {
             position: relative;
         }
@@ -71,11 +62,45 @@
             display: block;
             text-align: left;
         }
+
+        .item {
+            height: auto !important;
+            padding: 0px !important;
+            /* display: unset !important; */
+            text-align: center;
+            border-radius: 15px;
+            border-color: #888888;
+            border-style: solid;
+            display: block !important;
+        }
+
+        .item-top {
+            display: unset !important;
+        }
+
+        .item-img {
+            height: 60px;
+            width: 100%;
+
+        }
+
+        .body {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            background-color: #fff !important;
+            width: 100% !important;
+            height: auto !important;
+            padding: 0 !important;
+        }
+
+        .start {
+            display: inline-flex !important;
+        }
     }
 
     .body {
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 25%;
+        margin-right: 25%;
         background-color: #fff;
         /* width: 100%; */
         height: 100%;
@@ -87,24 +112,31 @@
         background-color: #fff;
     }
 
-    .header h1{
-        margin: auto !important;
-    }
-
     .item {
         border-radius: 15px;
-        background-color: #FEE9C0;
+        /* background-color: #399ee6; */
         height: 100px;
         margin: 10px;
-        line-height: 100px;
+        /* line-height: 100px; */
         padding: 15px;
         display: flex;
         background: linear-gradient(to right, #eaf3f6, #87ccee);
 
+
+    }
+
+    .body {
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: #fff;
+        /* width: 100%; */
+        height: auto;
+        padding: 50px;
+
     }
 
     .item img {
-        height: 50px;
+        height: 100%;
     }
 
     .item .button {
@@ -138,7 +170,10 @@
         font-weight: bolder;
         margin-left: 10px;
         margin-right: 10px;
+    }
 
+    .item {
+        box-shadow: 1px 13px 8px -10px #888888;
     }
 
     .item .des {
@@ -151,18 +186,34 @@
 
     .item-botton {
         height: auto;
-        background-color: #FEE9C0;
+        /* background-color: #FEE9C0;
+         */
         border-radius: 15px;
         padding: 15px;
         margin: 10px;
+        background: linear-gradient(to right, #eaf3f6, #87ccee);
+    }
+
+
+    .header h1 {
+        margin: auto !important;
     }
 
     .xep-hang {
         height: auto;
-        background-color: #FEE9C0;
+        /* background-color: #FEE9C0; */
         border-radius: 15px;
+        background: linear-gradient(to right, #eaf3f6, #87ccee);
         padding: 15px;
         margin: 10px;
+    }
+
+    .item-top {
+        display: flex;
+    }
+
+    .start {
+        display: flex;
     }
 
     .news {
@@ -219,32 +270,28 @@
     <div class="body">
 
         <div class="item">
-            <div>
-                <span>1</span>
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
-                <span class="title-item">QH88</span>
+                <div>
+                    <h3>QH88</h3>
+                    <div class="start">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
 
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
 
-            </div>
-
-
-            <div class="button">
-                <button type="button" class="button1">Cược ngay</button>
-                <button type="button" class="button1">Đánh giá</button>
-            </div>
-
-        </div>
-
-        <div class="item">
-            <div>
-                <span>1</span>
-                <img src="http://webcoban.vn/image/flower.gif">
-
-                <span class="title-item">QH88</span>
-
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                </div>
 
             </div>
 
@@ -257,32 +304,28 @@
         </div>
 
         <div class="item">
-            <div>
-                <span>1</span>
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
-                <span class="title-item">QH88</span>
+                <div>
+                    <h3>QH88</h3>
+                    <div class="start">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
 
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
 
-            </div>
-
-
-            <div class="button">
-                <button type="button" class="button1">Cược ngay</button>
-                <button type="button" class="button1">Đánh giá</button>
-            </div>
-
-        </div>
-
-        <div class="item">
-            <div>
-                <span>1</span>
-                <img src="http://webcoban.vn/image/flower.gif">
-
-                <span class="title-item">QH88</span>
-
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                </div>
 
             </div>
 
@@ -295,13 +338,96 @@
         </div>
 
         <div class="item">
-            <div>
-                <span>1</span>
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
-                <span class="title-item">QH88</span>
+                <div>
+                    <h3>QH88</h3>
+                    <div class="start">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
 
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="button">
+                <button type="button" class="button1">Cược ngay</button>
+                <button type="button" class="button1">Đánh giá</button>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
+
+                <div>
+                    <h3>QH88</h3>
+                    <div class="start">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
+
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="button">
+                <button type="button" class="button1">Cược ngay</button>
+                <button type="button" class="button1">Đánh giá</button>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
+
+                <div>
+                    <h3>QH88</h3>
+                    <div class="start">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
+
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
 
             </div>
 
@@ -328,7 +454,7 @@
         <div>
             <h2>Leave a Comment</h2>
 
-            <textarea rows="9" cols="70"></textarea>
+            <textarea rows="9" cols="40"></textarea>
 
             <div class="button">
                 <button type="button" class="button1">Post comment</button>

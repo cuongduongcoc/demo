@@ -42,9 +42,7 @@
             float: right;
             display: block;
         }
-    }
 
-    @media screen and (max-width: 600px) {
         .topnav.responsive {
             position: relative;
         }
@@ -60,16 +58,20 @@
             display: block;
             text-align: left;
         }
-    }
 
-    @media screen and (max-width: 600px) {
         .item {
-            height: auto;
-            width: 100%;
+            height: auto !important;
+            padding: 0px !important;
+            /* display: unset !important; */
+            text-align: center;
+            border-radius: 15px;
+            border-color: #888888;
+            border-style: solid;
+            display: block !important;
         }
 
         .item-top {
-            display: block;
+            display: unset !important;
         }
 
         .item-img {
@@ -79,12 +81,16 @@
         }
 
         .body {
-            margin-left: 0px;
-            margin-right: 0px;
-            background-color: #fff;
-            width: 100%;
-            height: auto;
-            padding: 0px !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            background-color: #fff !important;
+            width: 100% !important;
+            height: auto !important;
+            padding: 0 !important;
+        }
+
+        .start {
+            display: inline-flex !important;
         }
     }
 
@@ -95,6 +101,7 @@
 
 
     body {
+
         background-color: #fff;
     }
 
@@ -218,6 +225,10 @@
     .item-top {
         display: flex;
     }
+
+    .start {
+        display: flex;
+    }
 </style>
 
 <body>
@@ -252,11 +263,13 @@
 
         <div class="item">
             <div class="item-top">
-                <img src="http://webcoban.vn/image/flower.gif">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
                 <div>
                     <h3>QH88</h3>
-                    <div style="display: flex;">
+                    <div class="start">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -283,12 +296,14 @@
         </div>
 
         <div class="item">
-            <div style="display: flex;">
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
                 <div>
                     <h3>QH88</h3>
-                    <div style="display: flex;">
+                    <div class="start">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -315,12 +330,14 @@
         </div>
 
         <div class="item">
-            <div style="display: flex;">
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
                 <div>
                     <h3>QH88</h3>
-                    <div style="display: flex;">
+                    <div class="start">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -347,12 +364,14 @@
         </div>
 
         <div class="item">
-            <div style="display: flex;">
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
                 <div>
                     <h3>QH88</h3>
-                    <div style="display: flex;">
+                    <div class="start">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -379,12 +398,14 @@
         </div>
 
         <div class="item">
-            <div style="display: flex;">
-                <img src="http://webcoban.vn/image/flower.gif">
+            <div class="item-top">
+                <div>
+                    <img src="http://webcoban.vn/image/flower.gif">
+                </div>
 
                 <div>
                     <h3>QH88</h3>
-                    <div style="display: flex;">
+                    <div class="start">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -409,16 +430,17 @@
             </div>
 
         </div>
+
         <div class="item-botton">
             <ul>
                 <li>+ 10 Nhà cái tặng tiền 2023</li>
                 <li>+ 60 Nhà cái mới ra mắt 2023</li>
                 <li>Cảnh báo: +30 Nhà cái lừa đảo trắng trợn, khóa tài khoản, giam tiền người
                     chơi 2023.</li>
-
+    
             </ul>
         </div>
-
+    
         <div class="xep-hang">
             <h2 style="text-align: center;">Social.bet xếp hạng các trang cá cược theo sản phẩm</h2>
             <ul>
@@ -428,38 +450,39 @@
                 <li>Top 10 trang lô đề online</li>
                 <li>Top 10 trang lô đề online</li>
                 <li>Top 10 trang lô đề online</li>
-
+    
             </ul>
         </div>
-
+    
         <div class="news">
             <h2 style="text-align: center;">Bài viết mới nhất</h2>
             <div class="item-news">
                 <img src="http://webcoban.vn/image/flower.gif">
                 <a href="#">Nằm Mơ Thấy Trộm Vào Nhà Là Hiện Tượng Gì Và Đánh Số Nào?</a>
             </div>
-
+    
             <div class="item-news">
                 <img src="http://webcoban.vn/image/flower.gif">
                 <a href="#">Nằm Mơ Thấy Trộm Vào Nhà Là Hiện Tượng Gì Và Đánh Số Nào?</a>
             </div>
-
+    
             <div class="item-news">
                 <img src="http://webcoban.vn/image/flower.gif">
                 <a href="#">Nằm Mơ Thấy Trộm Vào Nhà Là Hiện Tượng Gì Và Đánh Số Nào?</a>
             </div>
-
+    
             <div class="item-news">
                 <img src="http://webcoban.vn/image/flower.gif">
                 <a href="#">Nằm Mơ Thấy Trộm Vào Nhà Là Hiện Tượng Gì Và Đánh Số Nào?</a>
             </div>
-
+    
             <div class="item-news">
                 <img src="http://webcoban.vn/image/flower.gif">
                 <a href="#">Nằm Mơ Thấy Trộm Vào Nhà Là Hiện Tượng Gì Và Đánh Số Nào?</a>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
