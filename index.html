@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <style>
@@ -60,19 +62,37 @@
         }
     }
 
-    .header h1{
+    @media screen and (max-width: 600px) {
+        .item {
+            height: auto;
+            width: 100%;
+        }
+
+        .item-top {
+            display: block;
+        }
+
+        .item-img {
+            height: 60px;
+            width: 100%;
+
+        }
+
+        .body {
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: #fff;
+            width: 100%;
+            height: auto;
+            padding: 0px !important;
+        }
+    }
+
+    .header h1 {
         margin: auto !important;
     }
 
-    .body {
-        margin-left: 30%;
-        margin-right: 30%;
-        background-color: #fff;
-        /* width: 100%; */
-        height: 100%;
-        padding: 50px;
 
-    }
 
     body {
         background-color: #fff;
@@ -87,6 +107,18 @@
         padding: 15px;
         display: flex;
         background: linear-gradient(to right, #eaf3f6, #87ccee);
+
+
+    }
+
+    .body {
+        margin-left: 25%;
+        margin-right: 25%;
+        background-color: #fff;
+        /* width: 100%; */
+        height: auto;
+        padding: 50px;
+
     }
 
     .item img {
@@ -174,6 +206,18 @@
         line-height: 50px;
         margin-right: 10px;
     }
+
+    .fa {
+        color: #ffc100;
+    }
+
+    h3 {
+        margin-top: 4px !important;
+    }
+
+    .item-top {
+        display: flex;
+    }
 </style>
 
 <body>
@@ -198,7 +242,7 @@
         </div>
     </div>
 
-    <div class="header" style="background-color: #333;text-align: center;height: 100px;">
+    <div class="header" style="background-color: #333;text-align: center;height: auto;">
         <h1 style="color: #f2f2f2;">Top 10 Nhà Cái Uy Tín Nhất Việt Nam 2023
             (Bảo Hiểm Cược)</h1>
         <p style="color: #f2f2f2;">Cập nhật ngày 12/12/2023</p>
@@ -207,35 +251,58 @@
     <div class="body">
 
         <div class="item">
+            <div class="item-top">
+                <img src="http://webcoban.vn/image/flower.gif">
+
+                <div>
+                    <h3>QH88</h3>
+                    <div style="display: flex;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
+
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="button">
+                <button type="button" class="button1">Cược ngay</button>
+                <button type="button" class="button1">Đánh giá</button>
+            </div>
+
+        </div>
+
+        <div class="item">
             <div style="display: flex;">
                 <img src="http://webcoban.vn/image/flower.gif">
 
                 <div>
                     <h3>QH88</h3>
+                    <div style="display: flex;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
                     <p>Hoạt động hơn 20 năm</p>
                 </div>
 
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
 
-
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
-
-            </div>
-
-
-            <div class="button">
-                <button type="button" class="button1">Cược ngay</button>
-                <button type="button" class="button1">Đánh giá</button>
-            </div>
-
-        </div>
-
-        <div class="item">
-            <div>
-                <img src="http://webcoban.vn/image/flower.gif">
-
-                <span class="title-item">QH88</span>
-
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                </div>
 
             </div>
 
@@ -248,12 +315,26 @@
         </div>
 
         <div class="item">
-            <div>
+            <div style="display: flex;">
                 <img src="http://webcoban.vn/image/flower.gif">
 
-                <span class="title-item">QH88</span>
+                <div>
+                    <h3>QH88</h3>
+                    <div style="display: flex;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
 
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
 
             </div>
 
@@ -266,12 +347,26 @@
         </div>
 
         <div class="item">
-            <div>
+            <div style="display: flex;">
                 <img src="http://webcoban.vn/image/flower.gif">
 
-                <span class="title-item">QH88</span>
+                <div>
+                    <h3>QH88</h3>
+                    <div style="display: flex;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
 
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
 
             </div>
 
@@ -284,12 +379,26 @@
         </div>
 
         <div class="item">
-            <div>
+            <div style="display: flex;">
                 <img src="http://webcoban.vn/image/flower.gif">
 
-                <span class="title-item">QH88</span>
+                <div>
+                    <h3>QH88</h3>
+                    <div style="display: flex;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Hoạt động hơn 20 năm</p>
+                </div>
 
-                <span class="des">Nhà cái #1 Việt Nam 2023</span>
+                <div style="display: block;margin: auto;margin-left: 15px;">
+                    <h3 style="margin-bottom: 10px;color: #236a79;text-align: center;">+2.888.000 VND</h3>
+                    <span class="des">Thưởng ngay 2,8 triệu thơm như múi mít</span>
+
+                </div>
 
             </div>
 
@@ -300,7 +409,6 @@
             </div>
 
         </div>
-
         <div class="item-botton">
             <ul>
                 <li>+ 10 Nhà cái tặng tiền 2023</li>

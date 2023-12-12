@@ -12,7 +12,6 @@
         overflow: hidden;
     }
 
-    /* Style the links inside the navigation bar */
     .topnav a {
         float: left;
         display: block;
@@ -23,22 +22,15 @@
         font-size: 17px;
     }
 
-    /* Change the color of links on hover */
     .topnav a:hover {
         background-color: #ddd;
         color: black;
     }
 
-    /* Hide the link that should open and close the topnav on small screens */
     .topnav .icon {
         display: none;
     }
 
-    /* 
-* When the screen is less than 600 pixels wide, 
-* hide all links, except for the first one ("Home"). 
-* Show the link that contains should open and close the topnav (.icon) 
-*/
     @media screen and (max-width: 600px) {
         .topnav a:not(:first-child) {
             display: none;
@@ -50,11 +42,6 @@
         }
     }
 
-    /* 
-* The "responsive" class is added to the topnav with JavaScript 
-* when the user clicks on the icon. This class makes the topnav 
-* look good on small screens (display the links vertically instead of horizontally) 
-*/
     @media screen and (max-width: 600px) {
         .topnav.responsive {
             position: relative;
@@ -73,9 +60,12 @@
         }
     }
 
+
+
+
     .body {
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 25%;
+        margin-right: 25%;
         background-color: #fff;
         /* width: 100%; */
         height: 100%;
@@ -102,7 +92,7 @@
         background-color: #fff;
     }
 
-    .header h1{
+    .header h1 {
         margin: auto !important;
     }
 
@@ -134,6 +124,26 @@
         display: grid;
         margin-left: auto;
     }
+
+    @media screen and (max-width: 600px) {
+        .item {
+            height: auto;
+            width: 100%;
+        }
+
+        .item-img {
+            height: 60px;
+            width: 100%;
+
+        }
+
+        .body {
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+
+        }
+    }
 </style>
 
 <body>
@@ -150,7 +160,7 @@
         </div>
     </div>
 
-    <div class="header" style="background-color: #333;text-align: center;height: 100px;">
+    <div class="header" style="background-color: #333;text-align: center;height: auto;">
         <h1 style="color: #f2f2f2;">08 trang bóng đá Unique Online uy tín tại Việt Nam</h1>
         <p style="color: #f2f2f2;">Cập nhật ngày 12/12/2023</p>
     </div>
@@ -179,8 +189,25 @@
         </div>
 
         <div class="item">
+            <div class="item-img">
+                <img src="http://webcoban.vn/image/flower.gif">
+            </div>
+
+            <div style="max-width: 350px;">
+                <h2>#1. W88</h2>
+                <p>Khuyến mãi Thể Thao: Tặng 100% tối đa 6.150.000 VND
+                    | Nhận thêm 90K tiền cược miễn phí khi xác minh SĐT tại W88</p>
+            </div>
+
+            <div style="text-align: right;" class="button">
+                <button type="button" class="button1">Cược ngay</button>
+                <button type="button" class="button1">Đánh giá</button>
+            </div>
+
+        </div>
+
+        <div class="item">
             <div>
-                <h3>1</h3>
                 <div>
                     <img src="http://webcoban.vn/image/flower.gif">
                 </div>
@@ -201,7 +228,24 @@
 
         <div class="item">
             <div>
-                <h3>1</h3>
+                <img src="http://webcoban.vn/image/flower.gif">
+            </div>
+
+            <div style="max-width: 350px;">
+                <h2>#1. W88</h2>
+                <p>Khuyến mãi Thể Thao: Tặng 100% tối đa 6.150.000 VND
+                    | Nhận thêm 90K tiền cược miễn phí khi xác minh SĐT tại W88</p>
+            </div>
+
+            <div style="text-align: right;" class="button">
+                <button type="button" class="button1">Cược ngay</button>
+                <button type="button" class="button1">Đánh giá</button>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div>
                 <div>
                     <img src="http://webcoban.vn/image/flower.gif">
                 </div>
@@ -222,49 +266,6 @@
 
         <div class="item">
             <div>
-                <h3>1</h3>
-                <div>
-                    <img src="http://webcoban.vn/image/flower.gif">
-                </div>
-            </div>
-
-            <div style="max-width: 350px;">
-                <h2>#1. W88</h2>
-                <p>Khuyến mãi Thể Thao: Tặng 100% tối đa 6.150.000 VND
-                    | Nhận thêm 90K tiền cược miễn phí khi xác minh SĐT tại W88</p>
-            </div>
-
-            <div style="text-align: right;" class="button">
-                <button type="button" class="button1">Cược ngay</button>
-                <button type="button" class="button1">Đánh giá</button>
-            </div>
-
-        </div>
-
-        <div class="item">
-            <div>
-                <h3>1</h3>
-                <div>
-                    <img src="http://webcoban.vn/image/flower.gif">
-                </div>
-            </div>
-
-            <div style="max-width: 350px;">
-                <h2>#1. W88</h2>
-                <p>Khuyến mãi Thể Thao: Tặng 100% tối đa 6.150.000 VND
-                    | Nhận thêm 90K tiền cược miễn phí khi xác minh SĐT tại W88</p>
-            </div>
-
-            <div style="text-align: right;" class="button">
-                <button type="button" class="button1">Cược ngay</button>
-                <button type="button" class="button1">Đánh giá</button>
-            </div>
-
-        </div>
-
-        <div class="item">
-            <div>
-                <h3>1</h3>
                 <div>
                     <img src="http://webcoban.vn/image/flower.gif">
                 </div>
